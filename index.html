@@ -9,16 +9,18 @@
   </head>
   <body>
     <h1 id="test">Mortgage Calculator</h1>
-    <form>
+    <form id="mortgageForm">
       <label for="loanAmount">Loan Amount</label>
       <input type="number" id="loanAmount" name="loanAmount" />
       <label for="loanTerm">Loan Term</label>
       <input type="number" id="loanTerm" name="loanTerm" />
       <label for="interest">Interest</label>
       <input type="number" id="interest" name="interest" />
-      <button type="submit">Calculate</button>
+      <button type="button" onclick="calculateMortgage()">Calculate</button>
     </form>
     <h1>Monthly payment:</h1>
-    <p></p>
+    <div class="center">
+      <p id="monthlyPayment"></p>
+    </div>
   </body>
 </html>
